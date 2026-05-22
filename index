@@ -1,0 +1,320 @@
+export default function MassageLanding() {
+  return (
+    <div className="bg-stone-950 text-stone-100 min-h-screen font-sans">
+      {/* HERO */}
+      <section className="relative overflow-hidden border-b border-stone-800">
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-900 via-stone-950 to-black opacity-90" />
+
+        <div className="relative max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 border border-stone-700 rounded-full px-4 py-2 text-sm text-stone-300 mb-6 backdrop-blur">
+              Massage Therapy • Romford
+            </div>
+
+            <h1 className="text-5xl md:text-7xl font-light leading-[0.95] tracking-tight mb-8">
+              Your body has been carrying too much.
+            </h1>
+
+            <p className="text-stone-300 text-lg leading-relaxed max-w-xl mb-10">
+              Deep tissue, relaxation and recovery-focused massage sessions designed
+              to release tension, calm the nervous system and help you feel like
+              yourself again.
+            </p>
+
+            <div className="flex flex-wrap gap-4 mb-12">
+              <button className="bg-stone-100 text-black px-7 py-4 rounded-2xl font-medium hover:scale-[1.02] transition">
+                Book Appointment
+              </button>
+
+              <button className="border border-stone-700 px-7 py-4 rounded-2xl text-stone-200 hover:bg-stone-900 transition">
+                WhatsApp Us
+              </button>
+            </div>
+
+            <div className="grid grid-cols-3 gap-6 max-w-lg text-sm">
+              <div>
+                <div className="text-3xl mb-2">4.9</div>
+                <div className="text-stone-400">Client Rating</div>
+              </div>
+
+              <div>
+                <div className="text-3xl mb-2">60m</div>
+                <div className="text-stone-400">Tailored Sessions</div>
+              </div>
+
+              <div>
+                <div className="text-3xl mb-2">24h</div>
+                <div className="text-stone-400">Easy Booking</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="aspect-[4/5] rounded-[2rem] overflow-hidden border border-stone-800 bg-stone-900 shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1200&auto=format&fit=crop"
+                alt="Massage session"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="absolute -bottom-6 -left-6 bg-stone-900 border border-stone-800 rounded-3xl p-5 max-w-xs shadow-xl">
+              <div className="text-sm text-stone-400 mb-2">Most booked</div>
+              <div className="text-xl mb-2">Deep Tissue Recovery</div>
+              <div className="text-stone-400 text-sm">
+                Ideal for desk tension, lower back pain and tight shoulders.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <div className="mb-16">
+          <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+            Treatments
+          </p>
+
+          <h2 className="text-4xl md:text-5xl max-w-3xl leading-tight font-light">
+            Not sure what you need? Start with how your body feels.
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+          {[
+            {
+              title: 'Deep Tissue',
+              text: 'For chronic tension, stiff shoulders and muscle tightness.',
+            },
+            {
+              title: 'Relaxation Massage',
+              text: 'Slow calming pressure to reduce stress and reset the nervous system.',
+            },
+            {
+              title: 'Sports Recovery',
+              text: 'Focused muscle recovery after training or physical activity.',
+            },
+            {
+              title: 'Back & Neck Relief',
+              text: 'Targeted support for posture-related pain and office fatigue.',
+            },
+          ].map((item) => (
+            <div
+              key={item.title}
+              className="bg-stone-900 border border-stone-800 rounded-[2rem] p-8 hover:-translate-y-1 transition"
+            >
+              <div className="w-14 h-14 rounded-2xl bg-stone-800 mb-6" />
+
+              <h3 className="text-2xl mb-4">{item.title}</h3>
+              <p className="text-stone-400 leading-relaxed">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* EXPERIENCE */}
+      <section className="border-y border-stone-800 bg-stone-900/40">
+        <div className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop"
+              alt="Massage room"
+              className="rounded-[2rem] border border-stone-800"
+            />
+          </div>
+
+          <div>
+            <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+              The Experience
+            </p>
+
+            <h2 className="text-4xl md:text-5xl leading-tight font-light mb-8">
+              Calm atmosphere. Professional care. Zero awkward energy.
+            </h2>
+
+            <div className="space-y-6 text-stone-300 leading-relaxed text-lg">
+              <p>
+                Every session starts with a short consultation to understand what
+                your body actually needs — not a generic routine.
+              </p>
+
+              <p>
+                Pressure, focus areas and session flow are adjusted to your comfort
+                level. First-time clients are always guided through the process.
+              </p>
+
+              <p>
+                The goal is simple: less pain, less tension, better movement and a
+                nervous system that finally unclenches.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PRICING */}
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
+          <div>
+            <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+              Pricing
+            </p>
+
+            <h2 className="text-4xl md:text-5xl font-light">
+              Straightforward pricing.
+            </h2>
+          </div>
+
+          <p className="text-stone-400 max-w-md">
+            No confusing packages. No hidden extras. Just choose the time your body
+            needs.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            {
+              time: '30 Minutes',
+              price: '£40',
+              desc: 'Quick tension relief',
+            },
+            {
+              time: '60 Minutes',
+              price: '£65',
+              desc: 'Most popular option',
+              featured: true,
+            },
+            {
+              time: '90 Minutes',
+              price: '£90',
+              desc: 'Full body reset',
+            },
+          ].map((item) => (
+            <div
+              key={item.time}
+              className={`rounded-[2rem] p-8 border ${
+                item.featured
+                  ? 'bg-stone-100 text-black border-stone-100'
+                  : 'bg-stone-900 border-stone-800'
+              }`}
+            >
+              <div className="text-lg mb-4">{item.time}</div>
+              <div className="text-6xl font-light mb-4">{item.price}</div>
+              <div
+                className={`mb-8 ${
+                  item.featured ? 'text-black/70' : 'text-stone-400'
+                }`}
+              >
+                {item.desc}
+              </div>
+
+              <button
+                className={`w-full py-4 rounded-2xl transition ${
+                  item.featured
+                    ? 'bg-black text-white'
+                    : 'bg-stone-800 hover:bg-stone-700'
+                }`}
+              >
+                Book Session
+              </button>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section className="bg-stone-900/40 border-y border-stone-800">
+        <div className="max-w-7xl mx-auto px-6 py-24">
+          <div className="mb-16">
+            <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+              Reviews
+            </p>
+
+            <h2 className="text-4xl md:text-5xl font-light max-w-2xl">
+              People usually come for pain relief and stay for how they feel after.
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              'I came in with terrible neck tension from office work and left feeling lighter immediately.',
+              'Professional, calming and genuinely attentive. Didn’t feel rushed at all.',
+              'One of the best deep tissue massages I’ve had. Actually targeted the problem areas.',
+            ].map((review, i) => (
+              <div
+                key={i}
+                className="bg-stone-950 border border-stone-800 rounded-[2rem] p-8"
+              >
+                <div className="text-2xl mb-6">★★★★★</div>
+                <p className="text-stone-300 leading-relaxed mb-8">{review}</p>
+                <div className="text-stone-500 text-sm">Verified Client</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="max-w-5xl mx-auto px-6 py-24">
+        <div className="text-center mb-16">
+          <p className="uppercase tracking-[0.3em] text-stone-500 text-sm mb-4">
+            FAQ
+          </p>
+
+          <h2 className="text-4xl md:text-5xl font-light">
+            Questions people are usually too shy to ask.
+          </h2>
+        </div>
+
+        <div className="space-y-4">
+          {[
+            'What should I wear during the massage?',
+            'Can I request softer or stronger pressure?',
+            'Is massage painful?',
+            'Do you work with first-time clients?',
+            'How often should I book sessions?',
+          ].map((faq) => (
+            <div
+              key={faq}
+              className="border border-stone-800 bg-stone-900 rounded-2xl px-6 py-5 flex items-center justify-between"
+            >
+              <div>{faq}</div>
+              <div className="text-2xl text-stone-500">+</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="px-6 pb-24">
+        <div className="max-w-7xl mx-auto rounded-[3rem] overflow-hidden border border-stone-800 bg-gradient-to-br from-stone-100 to-stone-300 text-black p-10 md:p-16">
+          <div className="max-w-3xl">
+            <div className="uppercase tracking-[0.3em] text-sm opacity-60 mb-6">
+              Ready when you are
+            </div>
+
+            <h2 className="text-4xl md:text-6xl font-light leading-tight mb-8">
+              Your body has been sending signals for a while now.
+            </h2>
+
+            <p className="text-black/70 text-lg leading-relaxed mb-10 max-w-2xl">
+              Book your session in under a minute and finally give your muscles and
+              nervous system a chance to recover.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-black text-white px-8 py-4 rounded-2xl">
+                Book Now
+              </button>
+
+              <button className="border border-black/20 px-8 py-4 rounded-2xl">
+                Message on WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
